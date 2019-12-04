@@ -30,7 +30,7 @@
 - has_many :groups_users
 - has_many :message
 
-## messageテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
