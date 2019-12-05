@@ -5,11 +5,12 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :groups_users
 - has_many :messages
+- has_many :groups
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -18,22 +19,23 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- belongs_to :groups
+- belongs_to :users
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|integer|null: false|
+|name|integer|null: false|
 
 ### Association
+- has_many :groups
 - has_many :groups_users
-- has_many :message
+- has_many :messages
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
