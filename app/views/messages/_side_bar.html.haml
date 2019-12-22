@@ -1,0 +1,30 @@
+.side-bar
+  .header
+    .header__name
+      Masa
+    %ul.header__lists
+      %li.list
+        = link_to '#' do
+          = icon('fa', 'edit',class: 'icon')
+      %li.list
+        = link_to '#' do
+          = icon('fa', 'cog',class: 'icon')
+  .groups
+    %a{:href => "#"}
+      .group
+        .group__name
+          A
+        .group__message
+          新着メッセージ
+    %a{:href => "#"}
+      .group
+        .group__name
+          B
+        .group__message
+          新着メッセージ
+    %a{:href => "#"}
+      .group
+        .group__name
+          C
+        .group__message
+          新着メッセージ
