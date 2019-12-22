@@ -11,7 +11,7 @@
     justify-content: space-between;
     .left-header {
       margin-top: 35px;
-      .left-header__title {
+      &__title {
         font-size: 20px;
         color: #333333;
         margin-bottom: 15px;
@@ -30,7 +30,7 @@
       color: #38aef0;
       .right-header {
         margin-top: 28px;
-        .right-header__button {
+        &__button {
           border: 1px solid #38aef0;
           height: 40px;
           width: 72px;

@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     .header__name {
-      
     }
     ul.header__lists {
       display: flex;
@@ -35,11 +34,11 @@
       color: #ffffff;
       .group {
         margin-bottom: 40px;
-        .group__name{
+        &__name{
           font-size: 15px;
           margin-bottom: 5px;
         }
-        .group__message {
+        &__message {
           font-size: 11px;
         }
       }
