@@ -11,9 +11,9 @@
           タナ
         %li.member
           １２３
-    %a{:href => "#"}
-      .right-header
-        .right-header__button
+    .right-header
+      = link_to '#' do
+        .button
           Edit
   .messages
     .message
@@ -36,7 +36,7 @@
           こんばんは
   .form
     .input-box
-      %input.form__message{:placeholder => "type a message", :type => "text"}
+      %input.form__message{placeholder: "type a message",type: "text"}
       %label.form__mask__image
         = icon('fa','image',class: 'icon')
         %input.hidden{type: 'file'}
