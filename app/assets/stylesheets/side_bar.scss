@@ -14,9 +14,9 @@
     justify-content: space-between;
     &__name {
     }
-    ul.header__lists {
+    &__lists {
       display: flex;
-      li.list {
+      .list {
         margin-left: 5px;
         a {
         text-decoration: none;
