@@ -29,7 +29,10 @@
     background: #2f3e51;
     padding: 20px 20px 0;
     height: calc(100% - 100px);
-    color: $white;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
     .group {
       margin-bottom: 40px;
       &__name{
